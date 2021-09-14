@@ -4,4 +4,16 @@
 Accuracy on test data: 0.9509
 ```
 
-Dataset: https://archive.ics.uci.edu/ml/datasets/covertype
+Observation:
+---
+The class labels are not at all balanced, hopefully, in the future, I will look into it more and balance the dataset. The issue is, due to the presence of instances belonging to classes 1 and 2, the model is biased towards this class label. Therefore, this issue must be addressed.
+
+Dataset: 
+---
+https://archive.ics.uci.edu/ml/datasets/covertype
+
+
+## TODO
+* [ ] Provide proper documentaiton
+* [ ] Address class imbalance issue
+
