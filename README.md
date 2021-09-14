@@ -18,5 +18,6 @@ https://archive.ics.uci.edu/ml/datasets/covertype
 
 ## TODO
 * [ ] Provide proper documentaiton
+* [ ] Dataset characteristics
 * [ ] Address class imbalance issue
 
