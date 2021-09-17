@@ -23,5 +23,7 @@ https://archive.ics.uci.edu/ml/datasets/covertype
 * [ ] Provide proper documentaiton
 * [ ] Dataset characteristics
 * [ ] Address class imbalance issue
+* [ ] Try other ML algorithms
+* [ ] DL based classification
 
 
