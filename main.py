@@ -9,12 +9,12 @@ from sklearn.model_selection import train_test_split
 plt.style.use("ggplot")
 
 
-file_location = "DATA_LOCATION"
+file_location = "covtype.csv"
 df_original = pd.read_csv(file_location)
 
-print(df_original.head())
-print(df_original.shape)
-print(len(df_original))
+# print(df_original.head())
+# print(df_original.shape)
+# print(len(df_original))
 
 # class distribution
 
@@ -53,7 +53,7 @@ RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
 """
 
 model_predict = model_rf.predict(X_test)
-print(metrics.accuracy_score(y_test, model_predict))
+print(f" Accuracy: {metrics.accuracy_score(y_test, model_predict)}")
 
 
 """
@@ -63,7 +63,7 @@ with the dimension of the instance
 I am just taking a single instance from the test data
 """
 a_instance = np.expand_dims(X_test.iloc[2], 0)
-print(a_instance.shape)
+# print(a_instance.shape)
 
 model_predict = model_rf.predict(a_instance)
 
@@ -72,4 +72,4 @@ def test_instance(test, original):
     return True if test == original else False
 
 
-print(test_instance(model_predict, y_test[2]))
+# print(test_instance(model_predict, y_test[2]))
