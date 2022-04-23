@@ -7,6 +7,11 @@ Note: For last couple of days, I was not doing some coding , and it made me feel
 Accuracy on test data: 0.9509
 ```
 
+---
+Executing the application as a docker container
+
+step 1: build the image usng `docker build -t covtype`, thjen create the container from the given image and starts the container using this command `docker run covtype` -> This will show the accuracy.
+
 Observation:
 ---
 The class labels are not at all balanced, hopefully, in the future, I will look into it more and balance the dataset. The issue is, due to the presence of instances belonging to classes 1 and 2 are higher than other instances, the model is biased towards this class label. Therefore, this issue needs to be addressed.
